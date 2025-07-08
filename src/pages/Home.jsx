@@ -5,6 +5,9 @@ import NumSection from '../components/homesections/NumSection'
 import ServiceSection from '../components/homesections/ServiceSection'
 import PortfolioSection from '../components/homesections/PortfolioSection'
 import Testimonial from '../components/homesections/Testimonial'
+import Partners from '../components/homesections/Partners'
+import HomeInsight from '../components/homesections/HomeInsight'
+import NewsLetter from '../components/homesections/NewsLetter'
 
 const Home = () => {
     return (
@@ -15,6 +18,9 @@ const Home = () => {
                 <ServiceSection />
                 <PortfolioSection />
                 <Testimonial />
+                <Partners />
+                <HomeInsight />
+                <NewsLetter />
             </section>
         </div>
     )

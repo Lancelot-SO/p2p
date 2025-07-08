@@ -52,7 +52,7 @@ const HeroSection = () => {
     }, []);
 
     return (
-        <section ref={sectionRef} className="w-full px-8 lg:px-[150px] 4xl:px-[200px] py-12 bg-white">
+        <section ref={sectionRef} className="w-full px-4 lg:px-[150px] 4xl:px-[200px] py-12 bg-white">
             {/* Top Row: Heading & CTA Button */}
             <div className="flex flex-wrap items-center justify-between">
                 <h1

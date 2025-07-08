@@ -1,10 +1,12 @@
+/* eslint-disable react/no-unescaped-entities */
 /* eslint-disable no-unused-vars */
 import React, { useState, useEffect } from 'react';
 import Img1 from "../../assets/num/img1.png"
 import Img2 from "../../assets/num/img2.png"
 
 
-const NumSection = () => {
+
+const AboutNum = () => {
     const [activeStep, setActiveStep] = useState(1);
     const [animate, setAnimate] = useState(false);
 
@@ -37,7 +39,7 @@ const NumSection = () => {
     const delayStyle = (index) => ({ transitionDelay: `${index * 200}ms` });
 
     return (
-        <section className="pt-[38px] pb-[30px] bg-[#F7F6F3]">
+        <section className="pt-[80px] pb-[30px] bg-[#F7F6F3]">
 
 
             {/* Main Content Grid */}
@@ -61,8 +63,8 @@ const NumSection = () => {
                             }`}
                     >
                         <h2 className="md:text-[49px] text-[28px] font-medium text-[#25295C] md:leading-[56px] tracking-[-3%]">
-                            Efficient. <span className="text-[#F25F3A]">Impactful,</span><br />
-                            <span className="text-[#F25F3A]">Unforgettable.</span> This is how we tell <span className="text-[#F25F3A]">your story</span>
+                            A <span className="text-[#F25F3A]">Team,</span>That's Built<br />To
+                            <span className="text-[#F25F3A]">break the noise.</span>
                         </h2>
                     </div>
 
@@ -95,7 +97,7 @@ const NumSection = () => {
                 </div>
 
                 {/* Right Side */}
-                <div className="lg:h-[400px] flex flex-col items-start justify-center">
+                <div className="lg:h-[250px] flex flex-col items-start pt-20">
                     {/* Step Indicators */}
                     <div
                         style={delayStyle(4)}
@@ -156,4 +158,4 @@ const NumSection = () => {
     );
 };
 
-export default NumSection;
+export default AboutNum;
