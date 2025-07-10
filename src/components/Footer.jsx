@@ -7,7 +7,7 @@ export default function Footer() {
     return (
         <div>
             {/* Main Content */}
-            <main className="w-full h-auto lg:h-[482px] bg-[#F6F5F2] px-6 md:px-8 py-8 md:py-16 lg:px-[150px] 4xl:px-[200px]">
+            <main className="w-full h-auto lg:h-[482px] bg-[#F6F5F2] px-6 py-8 md:py-16 lg:px-[150px] 4xl:px-[200px]">
                 <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20">
                     {/* Left Section */}
                     <div className="space-y-8">

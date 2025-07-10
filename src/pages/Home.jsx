@@ -11,7 +11,7 @@ import NewsLetter from '../components/homesections/NewsLetter'
 
 const Home = () => {
     return (
-        <div className=''>
+        <div className='overflow-hidden'>
             <section>
                 <HeroSection />
                 <NumSection />

@@ -95,7 +95,7 @@ const NumSection = () => {
                 </div>
 
                 {/* Right Side */}
-                <div className="lg:h-[400px] flex flex-col items-start justify-center">
+                <div className="lg:h-[400px] md:w-[450px] flex flex-col items-start justify-center">
                     {/* Step Indicators */}
                     <div
                         style={delayStyle(4)}
@@ -106,13 +106,18 @@ const NumSection = () => {
                             <button
                                 key={num}
                                 onClick={() => setActiveStep(num)}
-                                className={`pb-1 w-[35px] text-left text-[14px] font-medium transition-colors ${activeStep === num
-                                    ? 'text-[#F25F3A] border-b-2 border-[#F25F3A]' :
-                                    'text-gray-400 border-b-2 border-transparent'
+                                className={`group relative pb-1 w-[35px] text-left text-[14px] font-medium transition-colors duration-300 ${activeStep === num ? 'text-[#F25F3A]' : 'text-gray-400'
                                     }`}
                             >
                                 {num < 10 ? `0${num}` : num}
+                                <span
+                                    className={`absolute left-0 bottom-0 h-[2px] w-full transition-all duration-300 ${activeStep === num
+                                        ? 'bg-[#F25F3A] scale-x-100'
+                                        : 'bg-[#F25F3A] scale-x-0 group-hover:scale-x-100'
+                                        } origin-left`}
+                                ></span>
                             </button>
+
                         ))}
                     </div>
                     <div
